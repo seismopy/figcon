@@ -27,23 +27,17 @@ def find_packages(base_dir='.'):
 
 
 requirements = [
-    # TODO put requirements here
 ]
 
 test_requirements = [
     'pytest'
 ]
 
-setup_requirements = [
-    'pytest-runner',
-    'nbsphinx',
-    'numpydoc'
-]
 
 setup(
     name='figcon',
     version=__version__,
-    description="A simple way to configure prhon",
+    description="A simple way to configure python libraries",
     long_description=readme,
     author="Derrick Chambers",
     author_email='djachambeador@gmail.com',
@@ -63,5 +57,4 @@ setup(
     ],
     test_suite='tests',
     tests_require=test_requirements,
-    setup_requires=setup_requirements,
 )
