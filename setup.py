@@ -11,7 +11,7 @@ with open(join(here, 'figcon', 'version.py'), 'r') as fi:
     content = fi.read().split('=')[-1].strip()
     __version__ = content.replace('"', '').replace("'", '')
 
-with open('README.rst') as readme_file:
+with open('README.md') as readme_file:
     readme = readme_file.read()
 
 

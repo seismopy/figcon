@@ -1,12 +1,11 @@
-===============================
-figcon
-===============================
+# figcon
+
 
 A simple way to configure applications using pure python files.
 
-Quickstart
-----------
+# Quickstart
 
+```python
 # contents of default config (base_config.py)
 bob = 1
 harry = {0: 1, 1: 3}
@@ -24,16 +23,16 @@ harry = {1: 6}
 from figcon import Figcon
 
 # give figcon a path to the default config file
-config = Figcon(default_path='base_config', primary_path=config.py, secondary_path='~')
+config = Figcon(default_path='base_config', primary_path='config.py', 
+         secondary_path='~')
 
 # objects are updated based on lowest priority (default) to highest (primary)
 
-assert confg.bob  == 2
+assert config.bob  == 2
 assert config.harry == {0:1, 1: 6, 3:4}
+```
 
-
-Features
---------
+# Features
 
 * 3 step hierarchical configuration using a default, primary, and secondary config file.
 * Config files are pure python which allow lots flexibility.
