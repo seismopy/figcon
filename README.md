@@ -1,5 +1,4 @@
-# figcon
-
+# FigCon
 
 A simple way to configure applications using pure python files.
 
@@ -24,7 +23,7 @@ from figcon import Figcon
 
 # give figcon a path to the default config file
 config = Figcon(default_path='base_config', primary_path='config.py', 
-         secondary_path='~')
+                secondary_path='~')
 
 # objects are updated based on lowest priority (default) to highest (primary)
 
